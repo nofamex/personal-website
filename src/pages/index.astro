@@ -1,11 +1,12 @@
 ---
+import Coded from "@components/Coded.astro";
+import Header from "@components/Header.astro";
 import Layout from "@layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <div>
-    <h1 class="font-orbitron text-8xl text-white animate-pulse cursor-pointer">
-      O-Pal
-    </h1>
+<Layout title="O-Pal Sites">
+  <div class="grid grid-rows-2 w-full h-full auto-rows-max">
+    <Header />
+    <Coded />
   </div>
 </Layout>

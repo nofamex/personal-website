@@ -1,0 +1,23 @@
+---
+import { Logo } from "@constants/image";
+import { LOGO_DATA } from "@constants/image";
+---
+
+<div class="self-center">
+  <p class="text-center">I code in</p>
+  <div class="flex items-center justify-center space-x-4">
+    {
+      LOGO_DATA.map((item: Logo) => (
+        <a href={item.href} target="_blank">
+          <img
+            src={item.path}
+            alt={item.alt}
+            width={item.width}
+            height={item.height}
+            class="grayscale hover:grayscale-0 transition duration-500 ease-in-out cursor-pointer"
+          />
+        </a>
+      ))
+    }
+  </div>
+</div>
